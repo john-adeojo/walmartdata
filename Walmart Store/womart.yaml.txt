@@ -19,7 +19,7 @@ input_features:
       type: binary
     - name: Discount
       type: category
-    - name: MonthofYear
+    - name: MonthOfYear
       type: category
     - name: timeseries_column_name
       type: timeseries
