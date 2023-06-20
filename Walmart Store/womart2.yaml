@@ -1,0 +1,37 @@
+model_type: ecd
+split:
+    type: hash
+    column: Store_id
+    probabilities:
+    - 0.7
+    - 0.1
+    - 0.2
+input_features:
+    - name: Store_Type
+      type: category
+    - name: Location_Type
+      type: category
+    - name: Region_Code
+      type: category
+    - name: DayOfWeek
+      type: category
+    - name: Holiday
+      type: binary
+    - name: Discount
+      type: category
+    - name: MonthOfYear
+      type: category
+    - name: Sales_previous
+      type: timeseries
+      encoder: 
+          type: transformer
+combiner:
+    type: sequence_concat
+    main_sequence_feature: null
+    reduce_output: null
+output_features:
+    - name: Sales
+      type: numerical
+training:
+    epochs: 120
+    learning_rate: 0.001
