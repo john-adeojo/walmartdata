@@ -1,7 +1,7 @@
 model_type: ecd
 split:
-    type: datetime
-    column: Date
+    type: hash
+    column: Store_id
     probabilities:
     - 0.7
     - 0.1
