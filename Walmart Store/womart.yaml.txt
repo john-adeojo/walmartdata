@@ -21,7 +21,7 @@ input_features:
       type: category
     - name: MonthOfYear
       type: category
-    - name: timeseries_column_name
+    - name: Sales_previous
       type: timeseries
       tied: null
       encoder: 
