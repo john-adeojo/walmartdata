@@ -27,8 +27,8 @@ input_features:
           type: transformer
 combiner:
     type: sequence_concat
-    main_sequence_feature: null
-    reduce_output: null
+    main_sequence_feature: Sales_previous
+    reduce_output: attention
 output_features:
     - name: Sales
       type: numerical
