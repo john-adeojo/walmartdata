@@ -25,7 +25,7 @@ input_features:
       type: timeseries
       tied: null
       encoder: 
-          type: parallel_cnn
+          type: lstm
 output_features:
     - name: Sales
       type: numerical
