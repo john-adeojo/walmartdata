@@ -1,0 +1,31 @@
+model_type: ecd
+split:
+    type: datetime
+    column: Date
+    probabilities:
+    - 0.7
+    - 0.1
+    - 0.2
+input_features:
+    - name: Store_Type
+      type: category
+    - name: Location_Type
+      type: category
+    - name: Region_Code
+      type: category
+    - name: DayOfWeek
+      type: category
+    - name: Holiday
+      type: binary
+    - name: Discount
+      type: category
+    - name: MonthofYear
+      type: category
+    - name: timeseries_column_name
+      type: timeseries
+      tied: null
+      encoder: 
+          type: parallel_cnn
+output_features:
+    - name: Sales
+      type: numerical
