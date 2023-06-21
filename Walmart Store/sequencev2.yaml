@@ -36,7 +36,7 @@ combiner:
 output_features:
   - name: Sales_sequence_label
     type: sequence
-    decoder: tagger
+    decoder: generator
     reduce_input: null
     loss:
          type: sequence_softmax_cross_entropy
