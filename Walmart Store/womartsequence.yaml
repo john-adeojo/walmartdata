@@ -15,7 +15,7 @@ input_features:
       decoder:
           type: tagger
           fc_output_size: 256
-    - name: #Order
+    - name: Order
       type: sequence
       encoder:
           type: parallel_cnn
