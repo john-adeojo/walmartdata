@@ -19,7 +19,7 @@ input_features:
     type: sequence
     encoder: parallel_cnn
     reduce_output: null
-  - name: DayOfWek
+  - name: DayOfWeek
     type: sequence
     encoder: parallel_cnn
     reduce_output: null
