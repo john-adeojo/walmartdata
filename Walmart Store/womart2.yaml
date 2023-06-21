@@ -25,7 +25,8 @@ input_features:
       type: sequence
       tied: null
       encoder: 
-          type: rnn
+          type: parallel_cnn
+          embedding_size: 512
       decoder:
            type: generator
 combiner:
