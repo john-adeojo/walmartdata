@@ -1,0 +1,60 @@
+model_type: ecd
+split:
+    type: hash
+    column: Store_id
+    probabilities:
+    - 0.7
+    - 0.15
+    - 0.15
+input_features:
+    - name: Store_Type
+      type: category
+    - name: Location_Type
+      type: category
+    - name: Region_Code
+      type: category
+    - name: DayOfWeek
+      type: category
+    - name: Holiday
+      type: binary
+    - name: Discount
+      type: category
+    - name: MonthOfYear
+      type: category
+    - name: Sales_previous
+      type: sequence
+      tied: null
+      encoder: 
+          type: parallel_cnn
+          embedding_size: 512
+      decoder:
+          type: generator
+    - name: Holiday_previous
+      type: sequence
+      tied: null
+      encoder:
+          type: parallel_cnn
+      decoder:
+          type: generator
+    - name: Discount_previous
+      type: sequence
+      tied: null
+      encoder:
+          type: parallel_cnn
+      decoder:
+          type: generator
+combiner:
+    type: sequence_concat
+    main_sequence_feature: Sales_previous
+output_features:
+    - name: Sales
+      type: number
+      loss:
+          type: mean_squared_error
+trainer:
+    epochs: 300
+    learning_rate: 0.001
+    early_stop: 15
+    evaluate_training_set: true
+    validation_field: Sales
+    validation_metric: mean_squared_error
