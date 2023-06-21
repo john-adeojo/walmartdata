@@ -54,11 +54,11 @@ output_features:
     - name: Sales
       type: number
       loss:
-          type: root_mean_squared_percentage_error
+          type: mean_squared_error
 trainer:
     epochs: 300
     learning_rate: 0.001
     early_stop: 15
     evaluate_training_set: true
     validation_field: Sales
-    validation_metric: root_mean_squared_percentage_error
+    validation_metric: mean_squared_error
