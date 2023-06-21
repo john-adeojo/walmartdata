@@ -9,7 +9,6 @@ split:
 input_features:
     - name: Sales
       type: sequence
-      tied: null
       encoder: 
           type: parallel_cnn
           embedding_size: 256
@@ -18,7 +17,6 @@ input_features:
           fc_output_size: 256
     - name: #Order
       type: sequence
-      tied: null
       encoder:
           type: parallel_cnn
           embedding_size: 256
@@ -27,7 +25,6 @@ input_features:
           fc_output_size: 256
     - name: Discount
       type: sequence
-      tied: null
       encoder:
           type: parallel_cnn
           embedding_size: 256
@@ -36,7 +33,6 @@ input_features:
           fc_output_size: 256
     - name: DayofWeek
       type: sequence
-      tied: null
       encoder:
           type: parallel_cnn
           embedding_size: 256
@@ -45,7 +41,6 @@ input_features:
           fc_output_size: 256
     - name: MonthOfYear
       type: sequence
-      tied: null
       encoder:
           type: parallel_cnn
           embedding_size: 256
@@ -54,7 +49,6 @@ input_features:
           fc_output_size: 256
     - name: Holiday
       type: sequence
-      tied: null
       encoder:
           type: parallel_cnn
           embedding_size: 256
@@ -63,7 +57,6 @@ input_features:
           fc_output_size: 256
     - name: Holiday
       type: sequence
-      tied: null
       encoder:
           type: parallel_cnn
           embedding_size: 256
@@ -75,7 +68,6 @@ combiner:
 output_features:
     - name: Sales_sequence_label
       type: sequence
-      tied: null
       encoder:
           type: parallel_cnn
           embedding_size: 256
