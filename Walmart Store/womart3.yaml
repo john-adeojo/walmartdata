@@ -46,7 +46,7 @@ input_features:
       decoder:
           type: generator
 combiner:
-    type: sequence_concat
+    type: concat
     main_sequence_feature: Sales_previous
 output_features:
     - name: Sales
