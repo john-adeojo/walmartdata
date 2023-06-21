@@ -26,9 +26,7 @@ input_features:
       encoder: 
           type: parallel_cnn
 combiner:
-    type: sequence_concat
-    main_sequence_feature: Sales_previous
-    reduce_output: attention
+    type: concat
 output_features:
     - name: Sales
       type: numerical
