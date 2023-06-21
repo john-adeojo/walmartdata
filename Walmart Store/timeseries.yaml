@@ -34,24 +34,24 @@ input_features:
 combiner:
     type: concat
 output_features:
-  - name: Sales_sequence_label_0
+  - name: Sales_sequence_label_2019-05-25
     type: number
-  - name: Sales_sequence_label_1
+  - name: Sales_sequence_label_2019-05-26
     type: number
-  - name: Sales_sequence_label_2
+  - name: Sales_sequence_label_2019-05-27
     type: number
-  - name: Sales_sequence_label_3
+  - name: Sales_sequence_label_2019-05-28
     type: number
-  - name: Sales_sequence_label_4
+  - name: Sales_sequence_label_2019-05-29
     type: number
-  - name: Sales_sequence_label_5
+  - name: Sales_sequence_label_2019-05-30
     type: number
-  - name: Sales_sequence_label_6
+  - name: Sales_sequence_label_2019-05-31
     type: number
 trainer:
     epochs: 300
     learning_rate: 0.001
     early_stop: 15
     evaluate_training_set: true
-    validation_field: Sales_sequence_label_6
+    validation_field: Sales_sequence_label_2019-05-31
     validation_metric: mean_squared_error
