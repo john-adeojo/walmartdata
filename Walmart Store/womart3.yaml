@@ -28,7 +28,7 @@ input_features:
           type: parallel_cnn
           embedding_size: 256
       decoder:
-          type: generator
+          type: tagger
           fc_output_size: 256
     - name: Holiday_previous
       type: sequence
@@ -37,7 +37,7 @@ input_features:
           type: parallel_cnn
           embedding_size: 256
       decoder:
-          type: generator
+          type: tagger
           fc_output_size: 256
     - name: Discount_previous
       type: sequence
@@ -46,7 +46,7 @@ input_features:
           type: parallel_cnn
           embedding_size: 256
       decoder:
-          type: generator
+          type: tagger
           fc_output_size: 256
     - name: Order_previous
       type: sequence
@@ -55,7 +55,7 @@ input_features:
           type: parallel_cnn
           embedding_size: 256
       decoder:
-          type: generator
+          type: tagger
           fc_output_size: 256 
 combiner:
     type: concat
