@@ -53,5 +53,5 @@ trainer:
     learning_rate: 0.001
     early_stop: 15
     evaluate_training_set: true
-    validation_field: Sales_sequence_label_7
+    validation_field: Sales_sequence_label_6
     validation_metric: mean_squared_error
