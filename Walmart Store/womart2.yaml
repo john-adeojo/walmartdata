@@ -4,8 +4,8 @@ split:
     column: Store_id
     probabilities:
     - 0.7
-    - 0.1
-    - 0.2
+    - 0.15
+    - 0.15
 input_features:
     - name: Store_Type
       type: category
@@ -30,7 +30,12 @@ combiner:
     type: concat
 output_features:
     - name: Sales
-      type: numerical
-training:
-    epochs: 120
+      type: number
+      loss:
+          type: root_mean_squared_error
+trainer:
+    epochs: 200
     learning_rate: 0.001
+    evaluate_training_set: true
+    validation_field: Sales
+    validation_metric: root_mean_squared_percentage_error
