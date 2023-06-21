@@ -22,9 +22,10 @@ input_features:
     - name: MonthOfYear
       type: category
     - name: Sales_previous
-      type: sequence
+      type: timeseries
+      tied: null
       encoder: 
-          type: transformer
+          type: parallel_cnn
 combiner:
     type: concat
 output_features:
