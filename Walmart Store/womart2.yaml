@@ -41,4 +41,4 @@ trainer:
     early_stop: 15
     evaluate_training_set: true
     validation_field: Sales
-    validation_metric: root_mean_squared_error
+    validation_metric: mean_squared_error
