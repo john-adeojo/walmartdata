@@ -49,7 +49,7 @@ input_features:
           type: generator
           fc_output_size: 256 
 combiner:
-    type: sequence
+    type: concat
 output_features:
     - name: Sales
       type: number
