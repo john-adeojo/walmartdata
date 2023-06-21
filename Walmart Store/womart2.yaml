@@ -32,7 +32,7 @@ output_features:
     - name: Sales
       type: number
       loss:
-          type: root_mean_squared_percentage_error
+          type: root_mean_squared_error
 trainer:
     epochs: 200
     learning_rate: 0.001
