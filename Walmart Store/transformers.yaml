@@ -44,7 +44,7 @@ input_features:
     encoder: transformer
     reduce_output: null
 combiner:
-    type: transfromer
+    type: transformer
 output_features:
   - name: Sales_sequence_label_2019-05-02
     type: number
