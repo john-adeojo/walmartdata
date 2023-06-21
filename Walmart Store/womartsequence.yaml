@@ -55,14 +55,6 @@ input_features:
       decoder:
           type: tagger
           fc_output_size: 256
-    - name: Holiday
-      type: sequence
-      encoder:
-          type: parallel_cnn
-          embedding_size: 256
-      decoder:
-          type: tagger
-          fc_output_size: 256 
 combiner:
     type: concat
 output_features:
