@@ -38,10 +38,12 @@ output_features:
     type: sequence
     decoder: tagger
     reduce_input: null
+    loss:
+         type: sequence_softmax_cross_entropy
 trainer:
     epochs: 300
     learning_rate: 0.001
     early_stop: 15
     evaluate_training_set: true
-    validation_field: Sales
-    validation_metric: mean_squared_error
+    validation_field: Sales_sequence_label
+    validation_metric: sequence_softmax_cross_entropy
