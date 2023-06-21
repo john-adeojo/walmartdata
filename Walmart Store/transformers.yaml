@@ -3,9 +3,9 @@ split:
     type: hash
     column: Store_id
     probabilities:
-    - 0.7
-    - 0.15
-    - 0.15
+    - 0.8
+    - 0.1
+    - 0.1
 input_features:
   - name: Sales
     type: sequence
