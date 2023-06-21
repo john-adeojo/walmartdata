@@ -34,6 +34,7 @@ input_features:
       tied: null
       encoder:
           type: parallel_cnn
+          embedding_size: 512
       decoder:
           type: generator
     - name: Discount_previous
@@ -41,6 +42,7 @@ input_features:
       tied: null
       encoder:
           type: parallel_cnn
+          embedding_size: 512
       decoder:
           type: generator
 combiner:
