@@ -32,7 +32,7 @@ input_features:
     encoder: parallel_cnn
     reduce_output: null
 combiner:
-    type: concat
+    type: sequence_concat
 output_features:
   - name: Sales_sequence_label_2019-05-02
     type: number
