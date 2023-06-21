@@ -29,6 +29,7 @@ input_features:
           embedding_size: 512
       decoder:
           type: generator
+          fc_output_size: 256
     - name: Holiday_previous
       type: sequence
       tied: null
@@ -37,6 +38,7 @@ input_features:
           embedding_size: 512
       decoder:
           type: generator
+          fc_output_size: 256
     - name: Discount_previous
       type: sequence
       tied: null
@@ -45,8 +47,9 @@ input_features:
           embedding_size: 512
       decoder:
           type: generator
+          fc_output_size: 256 
 combiner:
-    type: tabnet
+    type: sequence
 output_features:
     - name: Sales
       type: number
