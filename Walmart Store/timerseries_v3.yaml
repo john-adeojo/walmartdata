@@ -9,27 +9,27 @@ split:
 input_features:
   - name: Sales
     type: sequence
-    encoder: parallel_cnn
+    encoder: transformer
     reduce_output: null
   - name: Order
     type: sequence
-    encoder: parallel_cnn
+    encoder: transformer
     reduce_output: null
   - name: Discount
     type: sequence
-    encoder: parallel_cnn
+    encoder: transformer
     reduce_output: null
   - name: DayOfWeek
     type: sequence
-    encoder: parallel_cnn
+    encoder: transformer
     reduce_output: null
   - name: MonthOfYear
     type: sequence
-    encoder: parallel_cnn
+    encoder: transformer
     reduce_output: null
   - name: Holiday
     type: sequence
-    encoder: parallel_cnn
+    encoder: transformer
     reduce_output: null
 combiner:
     type: sequence_concat
