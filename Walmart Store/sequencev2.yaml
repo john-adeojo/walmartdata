@@ -46,7 +46,7 @@ output_features:
     type: number
   - name: Sales_sequence_label_5
     type: number
-  - name: Sales_sequence_label_7
+  - name: Sales_sequence_label_6
     type: number
 trainer:
     epochs: 300
