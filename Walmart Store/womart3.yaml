@@ -46,8 +46,7 @@ input_features:
       decoder:
           type: generator
 combiner:
-    type: sequence_concat
-    main_sequence_feature: Sales_previous
+    type: tabnet
 output_features:
     - name: Sales
       type: number
