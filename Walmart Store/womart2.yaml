@@ -24,7 +24,7 @@ input_features:
     - name: Sales_previous
       type: timeseries
       encoder: 
-          type: parallel_cnn
+          type: rnn
 combiner:
     type: concat
 output_features:
