@@ -31,18 +31,18 @@ input_features:
     type: sequence
     encoder: stacked_cnn
     reduce_output: null
-  - name: Store_Type_enc
-    type: bag
-    encoder: embed
-    reduce_output: null
-  - name: Location_Type_enc
-    type: bag
-    encoder: embed
-    reduce_output: null
-  - name: Region_Code_enc
-    type: bag
-    encoder: embed
-    reduce_output: null
+  - name: Store_Type
+    type: category
+    encoder: dense
+    #reduce_output: null
+  - name: Location_Type
+    type: category
+    encoder: dense
+    #reduce_output: null
+  - name: Region_Code
+    type: category
+    encoder: dense
+    #reduce_output: null
 combiner:
     type: sequence
 output_features:
