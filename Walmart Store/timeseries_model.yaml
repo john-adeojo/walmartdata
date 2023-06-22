@@ -168,3 +168,4 @@ trainer:
     early_stop: 20
     evaluate_training_set: true
     validation_metric: mean_absolute_error
+    validation_field: Order_sequence_label_2019-05-31
