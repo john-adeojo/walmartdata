@@ -159,7 +159,7 @@ output_features:
     loss:
       type: mean_squared_error
 trainer:
-    epochs: 500
+    epochs: 1500
     learning_rate: 0.001
-    early_stop: 20
+    early_stop: 30
     evaluate_training_set: true
