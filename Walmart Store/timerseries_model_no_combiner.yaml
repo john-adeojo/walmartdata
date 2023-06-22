@@ -43,8 +43,6 @@ input_features:
     type: bag
     encoder: embed
     reduce_output: null
-combiner:
-    type: sequence
 output_features:
   - name: Order_sequence_label_2019-05-02
     type: number
