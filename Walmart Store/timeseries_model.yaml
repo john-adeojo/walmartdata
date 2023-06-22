@@ -49,123 +49,123 @@ output_features:
   - name: Order_sequence_label_2019-05-02
     type: number
     loss:
-      type: root_mean_squared_error
+      type: root_mean_squared_percentage_error
   - name: Order_sequence_label_2019-05-03
     type: number
     loss:
-      type: root_mean_squared_error
+      type: root_mean_squared_percentage_error
   - name: Order_sequence_label_2019-05-04
     type: number
     loss:
-      type: root_mean_squared_error
+      type: root_mean_squared_percentage_error
   - name: Order_sequence_label_2019-05-05
     type: number
     loss:
-      type: root_mean_squared_error
+      type: root_mean_squared_percentage_error
   - name: Order_sequence_label_2019-05-06
     type: number
     loss:
-      type: root_mean_squared_error
+      type: root_mean_squared_percentage_error
   - name: Order_sequence_label_2019-05-07
     type: number
     loss:
-      type: root_mean_squared_error
+      type: root_mean_squared_percentage_error
   - name: Order_sequence_label_2019-05-08
     type: number
     loss:
-      type: root_mean_squared_error
+      type: root_mean_squared_percentage_error
   - name: Order_sequence_label_2019-05-09
     type: number
   - name: Order_sequence_label_2019-05-10
     type: number
     loss:
-      type: root_mean_squared_error
+      type: root_mean_squared_percentage_error
   - name: Order_sequence_label_2019-05-11
     type: number
     loss:
-      type: root_mean_squared_error
+      type: root_mean_squared_percentage_error
   - name: Order_sequence_label_2019-05-12
     type: number
     loss:
-      type: root_mean_squared_error
+      type: root_mean_squared_percentage_error
   - name: Order_sequence_label_2019-05-13
     type: number
     loss:
-      type: root_mean_squared_error
+      type: root_mean_squared_percentage_error
   - name: Order_sequence_label_2019-05-14
     type: number
   - name: Order_sequence_label_2019-05-15
     type: number
     loss:
-      type: root_mean_squared_error
+      type: root_mean_squared_percentage_error
   - name: Order_sequence_label_2019-05-16
     type: number
     loss:
-      type: root_mean_squared_error
+      type: root_mean_squared_percentage_error
   - name: Order_sequence_label_2019-05-17
     type: number
     loss:
-      type: root_mean_squared_error
+      type: root_mean_squared_percentage_error
   - name: Order_sequence_label_2019-05-18
     type: number
     loss:
-      type: root_mean_squared_error
+      type: root_mean_squared_percentage_error
   - name: Order_sequence_label_2019-05-19
     type: number
     loss:
-      type: root_mean_squared_error
+      type: root_mean_squared_percentage_error
   - name: Order_sequence_label_2019-05-20
     type: number
     loss:
-      type: root_mean_squared_error
+      type: root_mean_squared_percentage_error
   - name: Order_sequence_label_2019-05-21
     type: number
     loss:
-      type: root_mean_squared_error
+      type: root_mean_squared_percentage_error
   - name: Order_sequence_label_2019-05-22
     type: number
   - name: Order_sequence_label_2019-05-23
     type: number
     loss:
-      type: root_mean_squared_error
+      type: root_mean_squared_percentage_error
   - name: Order_sequence_label_2019-05-24
     type: number
   - name: Order_sequence_label_2019-05-25
     type: number
     loss:
-      type: root_mean_squared_error
+      type: root_mean_squared_percentage_error
   - name: Order_sequence_label_2019-05-26
     type: number
     loss:
-      type: root_mean_squared_error
+      type: root_mean_squared_percentage_error
   - name: Order_sequence_label_2019-05-27
     type: number
     loss:
-      type: root_mean_squared_error
+      type: root_mean_squared_percentage_error
   - name: Order_sequence_label_2019-05-28
     type: number
     loss:
-      type: root_mean_squared_error
+      type: root_mean_squared_percentage_error
   - name: Order_sequence_label_2019-05-29
     type: number
     loss:
-      type: root_mean_squared_error
+      type: root_mean_squared_percentage_error
   - name: Order_sequence_label_2019-05-30
     type: number
     loss:
-      type: root_mean_squared_error
+      type: root_mean_squared_percentage_error
   - name: Order_sequence_label_2019-05-31
     type: number
     loss:
-      type: root_mean_squared_error
+      type: root_mean_squared_percentage_error
   - name: Order_sequence_label_avg
     type: number
     loss:
-      type: root_mean_squared_error
+      type: root_mean_squared_percentage_error
 trainer:
     epochs: 200
     learning_rate: 0.0001
     early_stop: 20
     evaluate_training_set: true
     validation_field: Order_sequence_label_avg
-    validation_metric: root_mean_squared_error
+    validation_metric: root_mean_squared_percentage_error
