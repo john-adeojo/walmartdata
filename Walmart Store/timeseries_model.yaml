@@ -8,15 +8,15 @@ split:
     - 0.1
 input_features:
   - name: Sales
-    type: timeseries
+    type: sequence
     encoder: stacked_cnn
     reduce_output: null
   - name: Order
-    type: timeseries
+    type: sequence
     encoder: stacked_cnn
     reduce_output: null
   - name: Discount
-    type: timeseries
+    type: sequence
     encoder: stacked_cnn
     reduce_output: null
   - name: DayOfWeek
