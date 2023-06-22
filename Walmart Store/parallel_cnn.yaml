@@ -158,7 +158,6 @@ output_features:
     type: number
     loss:
       type: mean_squared_error
-         type: mean_squared_error
   - name: Order_sequence_label_avg
     type: number
     loss:
