@@ -31,15 +31,15 @@ input_features:
     type: sequence
     encoder: parallel_cnn
     reduce_output: null
-  - name: Store_Type
+  - name: Store_Type_enc
     type: bag
     encoder: embed
     reduce_output: null
-  - name: Location_Type
+  - name: Location_Type_enc
     type: bag
     encoder: embed
     reduce_output: null
-  - name: Region_Code
+  - name: Region_Code_enc
     type: bag
     encoder: embed
     reduce_output: null
