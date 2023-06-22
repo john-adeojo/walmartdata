@@ -8,11 +8,11 @@ split:
     - 0.1
 input_features:
   - name: Sales
-    type: sequence
+    type: timeseries
     encoder: parallel_cnn
     reduce_output: null
   - name: Order
-    type: sequence
+    type: timeseries
     encoder: parallel_cnn
     reduce_output: null
   - name: Discount
