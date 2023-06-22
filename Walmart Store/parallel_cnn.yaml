@@ -158,6 +158,11 @@ output_features:
     type: number
     loss:
       type: mean_squared_error
+         type: mean_squared_error
+  - name: Order_sequence_label_avg
+    type: number
+    loss:
+      type: mean_squared_error
 trainer:
     epochs: 500
     learning_rate: 0.001
