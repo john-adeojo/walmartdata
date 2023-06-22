@@ -44,7 +44,7 @@ input_features:
     encoder: dense
     #reduce_output: null
 combiner:
-    type: sequence
+    type: tabnet
 output_features:
   - name: Order_sequence_label_2019-05-02
     type: number
