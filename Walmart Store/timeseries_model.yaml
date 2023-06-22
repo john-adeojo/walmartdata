@@ -162,14 +162,9 @@ output_features:
     type: number
     loss:
       type: mean_absolute_error
-  - name: Order_sequence_label_avg
-    type: number
-    loss:
-      type: mean_absolute_error
 trainer:
     epochs: 200
     learning_rate: 0.0001
     early_stop: 20
     evaluate_training_set: true
-    validation_field: Order_sequence_label_avg
     validation_metric: mean_absolute_error
